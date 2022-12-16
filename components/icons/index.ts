@@ -1,0 +1,10 @@
+import CodeIcon from './code';
+import EmailIcon from './email';
+import FacebookIcon from './facebook';
+import GithubIcon from './github';
+import InstagramIcon from './instagram';
+import LinkedinIcon from './linkedin';
+import PodcastIcon from './podcast';
+import TwitterIcon from './twitter';
+import YoutubeIcon from './youtube';
+export { CodeIcon, EmailIcon, FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon, PodcastIcon, TwitterIcon, YoutubeIcon };
