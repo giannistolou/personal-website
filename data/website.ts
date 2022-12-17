@@ -1,5 +1,6 @@
 const website = {
-	domain: 'https://giannistolou.gr'
+	domainLink: 'https://giannistolou.gr',
+	domain:'giannistolou.gr',
 }	
 
 export { website };

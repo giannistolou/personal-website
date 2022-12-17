@@ -18,9 +18,9 @@ const Post = ({ data: { title, date, tags, thumbnailUrl, description, slug }, md
 		<>
 			<ArticleJsonLd
 				type="BlogPosting"
-				url={`${website.domain}/blog/${slug}`}
+				url={`${website.domainLink}/blog/${slug}`}
 				title={title}
-				images={thumbnailUrl ? [`${website.domain}/${thumbnailUrl}`] : []}
+				images={thumbnailUrl ? [`${website.domainLink}/${thumbnailUrl}`] : []}
 				datePublished={showDate ? presentationDate : ''}
 				authorName={`${person.firstName} ${person.lastName}`}
 				description={description}
