@@ -4,7 +4,7 @@ import { website } from '@data/website';
 import { IPost } from "@interfaces/post";
 import moment from "moment";
 import { MDXRemote } from "next-mdx-remote";
-import { ArticleJsonLd } from "next-seo";
+import { ArticleJsonLd, NextSeo } from "next-seo";
 
 interface IPostProps {
 	data: IPost;
@@ -16,6 +16,10 @@ const Post = ({ data: { title, date, tags, thumbnailUrl, description, slug }, md
 	const showDate = presentationDate !== 'Invalid date' && date;
 	return (
 		<>
+			<NextSeo
+				title={title}
+				description={description}
+			/>
 			<ArticleJsonLd
 				type="BlogPosting"
 				url={`${website.domainLink}/blog/${slug}`}

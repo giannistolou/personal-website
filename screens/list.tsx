@@ -3,12 +3,13 @@ import { IPost } from '@interfaces/post';
 
 interface IList {
 	items: IPost[];
+	path: string;
 }
 
-const List = ({ items }: IList) => (
+const List = ({ items, path }: IList) => (
 	<div className="mt-5">
 		{items.map((item: IPost, index: number) => (
-			<PostPreview key={index} {...item} slug={'/blog/' + item.slug}/>
+			<PostPreview key={index} {...item} slug={`/${path}/` + item.slug}/>
 		))}
 	</div>
 )

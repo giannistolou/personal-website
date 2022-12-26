@@ -1,9 +1,9 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import { sortBy } from "lodash";
+import { NextSeo } from 'next-seo';
 import path from 'path';
 import List from '../../screens/list';
-
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync(path.join('posts'))
@@ -25,4 +25,14 @@ export const getStaticProps = async () => {
   }
 }
 
-export default List;
+const ListPage = ({ items }) => {
+  return(
+  <>
+  			<NextSeo
+				title={"Blog"}
+			/>
+      <List items={items} path={'blog'}/>
+      </>
+  )
+}
+export default ListPage;

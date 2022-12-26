@@ -6,7 +6,6 @@ import Section from "@components/section";
 import { Email, Instagram, Linkedin, Twitter } from "@components/social-media-icons";
 import { person, socialMedia, work } from "@data/person";
 import { IPost } from '@interfaces/post';
-import Link from "next/link";
 
 interface IHome {
 	posts: IPost[];
@@ -15,9 +14,9 @@ interface IHome {
 
 const Home = ({ posts, projects }: IHome) => {
 	return (
-		<main>
+		<>
 			<div className="sm:text-center lg:text-left">
-				<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl block xl text-sky-600">
+				<h1 className="mb-2 text-4xl font-bold text-zinc-800 dark:text-white capitalize">
 					{person.firstName} {person.lastName}
 				</h1>
 				<h2 className="block text-black-300 dark:white-300 text-3xl">
@@ -62,7 +61,7 @@ const Home = ({ posts, projects }: IHome) => {
 							<PrimaryLink title="See more posts" url="/blog" />
 						</div>)}</>
 			</Section>
-		</main>
+		</>
 	);
 }
 

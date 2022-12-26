@@ -20,13 +20,13 @@ const work = [
 	{
 		title: "Desquared",
 		url: "https://thinkdesquared.com/",
-		label: "currently",
+		label: "2022 - currently",
 		icon: "",
 	},
 	{
 		title: "Cantaloop",
 		url: "http://www.cantaloop.gr/",
-		label: "2021-2022",
+		label: "2021 - 2022",
 		icon: "",
 	},
 ];
