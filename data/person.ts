@@ -12,6 +12,7 @@ const socialMedia = {
 	instagram: undefined,
 	twitter: undefined,
 	youtube: undefined,
+	github: 'https://github.com/giannistolou',
 	linkedin: "https://www.linkedin.com/in/ioannis-apostolou/",
 	email: "mailto:hey@giannistolou.gr",
 };

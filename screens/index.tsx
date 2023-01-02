@@ -3,7 +3,7 @@ import PostPreview from "@components/post-preview";
 import PrimaryLink from "@components/primary-link";
 import ProjectItem from "@components/project-item";
 import Section from "@components/section";
-import { Email, Instagram, Linkedin, Twitter } from "@components/social-media-icons";
+import { Email, Github, Instagram, Linkedin, Twitter } from "@components/social-media-icons";
 import { person, socialMedia, work } from "@data/person";
 import { IPost } from '@interfaces/post';
 
@@ -36,6 +36,7 @@ const Home = ({ posts, projects }: IHome) => {
 				{socialMedia?.instagram && <Instagram href={socialMedia.instagram} />}
 				{socialMedia?.twitter && <Twitter href={socialMedia.twitter} />}
 				{socialMedia?.email && <Email href={socialMedia.email} />}
+				{socialMedia?.github && <Github href={socialMedia.github} />}
 			</div>
 			<section className="mt-5 mb-5">
 				<GroupList title="Working Experience" data={work} />
