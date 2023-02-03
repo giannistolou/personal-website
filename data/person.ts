@@ -19,18 +19,30 @@ const socialMedia = {
 
 const work = [
 	{
-		title: "Desquared",
+		title: "Web Software Engineer",
+		subtitle: "Desquared",
 		url: "https://thinkdesquared.com/",
 		label: "2022 - currently",
 		icon: "",
 	},
 	{
-		title: "Cantaloop",
+		title: "Junior Frontend Developer",
+		subtitle: "Cantaloop",
 		url: "http://www.cantaloop.gr/",
 		label: "2021 - 2022",
 		icon: "",
 	},
 ];
 
+const education = [
+	{
+		title: "Informatics",
+		subtitle: "AUEB",
+		url: "https://www.aueb.gr/",
+		label: "2019 - currently",
+		icon: "",
+	},
+];
 
-export { person, socialMedia, work, };
+
+export { person, socialMedia, work, education };

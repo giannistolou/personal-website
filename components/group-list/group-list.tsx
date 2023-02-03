@@ -14,10 +14,7 @@ const GroupList = ({ title, data }: IGroupList) => {
 				{data.map((item, index) => (
 					<Item
 						key={index}
-						title={item.title}
-						icon={item.icon}
-						label={item.label}
-						url={item.url}
+						{...item}
 					/>
 				))}
 			</ul>

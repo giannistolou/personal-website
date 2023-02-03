@@ -4,7 +4,7 @@ import PrimaryLink from "@components/primary-link";
 import ProjectItem from "@components/project-item";
 import Section from "@components/section";
 import { Email, Github, Instagram, Linkedin, Twitter } from "@components/social-media-icons";
-import { person, socialMedia, work } from "@data/person";
+import { education, person, socialMedia, work } from "@data/person";
 import { IPost } from '@interfaces/post';
 
 interface IHome {
@@ -40,6 +40,9 @@ const Home = ({ posts, projects }: IHome) => {
 			</div>
 			<section className="mt-5 mb-5">
 				<GroupList title="Working Experience" data={work} />
+			</section>
+			<section className="mt-5 mb-5">
+				<GroupList title="Education" data={education} />
 			</section>
 			<Section title="Projects">
 				<>
